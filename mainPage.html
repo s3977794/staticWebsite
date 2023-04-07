@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,112 @@
     <title>Swanglee Bookstore</title>
     <link rel="stylesheet" href="mainPage.css">
     <link rel="stylesheet" href="headerAndFooterStyle.css">
+    <script src="https://kit.fontawesome.com/6f8d1d8e9d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header></header>
-    <footer></footer>
+    <header>
+        <a href="">
+            <img src="Pictures/Logo.png" alt="Logo">
+        </a>    
+        <div class="searchBarContainer">
+            <div class="dropDown">
+                <span><i class="fa-solid fa-list"></i></span>
+            </div>
+            <div class="searchBar">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-heart"></i>
+                        <br>
+                        <span>Favorite</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <br>
+                        <span>Carts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-user"></i>
+                        <br>
+                        <span>User</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-bell"></i>
+                        <br>
+                        <span>Notification</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="switchDisplayMode">
+                        <label class="changeTheme" id="changeTheme">
+                            <input type="checkbox" name="changeTheme">
+                        </label>
+                        <p>Dark Mode</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+         
+         
+    </header>
+    <section>
+        <div class="leftSpace"></div>
+        <div class="midSpace"></div>
+        <div class="rightSpace"></div>
+    </section>
+    <footer>
+        <div class="subscriptionDiv">
+            <form action="">
+                <p>Sign up for more information?</p>
+                <input type="email" placeholder="Enter your email address here...">
+                <button type="submit"></button>
+            </form>
+        </div>
+        <div class="basicInformation">
+
+            <div class="detail">
+                <img src="Pictures/Logo.png" alt="Company Logo">
+                <br>
+                <p>702 Đ. Nguyễn Văn Linh, Tân Hưng, Quận 7, Thành phố Hồ Chí Minh 700000, Vietnam</p>
+                <p>Swanglee Bookstore accepts online orders and deliveries. We only take orders within country.</p>
+            </div>
+            <div class="detail">
+                
+                    <h3>About Us</h3>
+                    <a href="">About Swanglee Bookstore</a>
+                    <a href="">Swanglee Bookstore System</a>
+                    <a href="">Sales Policy</a>
+                    <a href="">Transportation Method</a>
+                
+            </div>
+            <div class="detail">
+                    <h3>Support</h3>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Term</a>
+                    <a href="">Contact Us</a>
+                
+            </div>
+        </div>
+        <hr style="width: 80%; color: black;">
+        <div class="copyRight">
+            <p>SWANGLEE BOOKSTORE Copyright@ by Joe Le</p>
+        </div>
+    </footer>
 </body>
+
 </html>
