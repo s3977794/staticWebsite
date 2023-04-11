@@ -1,0 +1,152 @@
+:root{
+    --black: #181818;
+    --white: #fff;
+    --gray: #efefef;
+    --lightgray:#d4d4d4;
+}
+
+body:has(input[name = "changeTheme"]:checked){
+    --white: #181818; 
+    --black: #fff;
+    --gray:#383838;
+    --lightgray:#121212;
+}
+section{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+/* Start left  */
+section .left{
+    width: 20%;
+    position: relative;
+}
+
+section .left .leftAdContainer{
+    position: fixed;
+    width: 200px;
+    height: 478px;
+    background: wheat;
+    left: 170px;
+    top: 13%;
+    border-radius: 15px;
+}
+
+/* End left  */
+
+/* Start center  */
+section .center{
+    width: 60%;
+    background: violet;
+}
+/* Start News  */
+section .divNews{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .divNews .newsContainer{
+    width: 90%;
+    height: 90%;
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .newsContainer .mainNews{
+    width: 100%;
+    height: 70%;
+    background: blue;
+}
+
+section .newsContainer .secondaryNews{
+    width: 100%;
+    height: 30%;
+    background: tomato;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .secondaryNews .newsItem{
+    height: 100%;
+    width: 250px;
+    background: teal;
+}
+/* End News  */
+
+/* Start Content Display */
+section .contentDisplay{
+    margin-top: 20px;
+    background: yellow;
+    display: grid;
+    overflow: hidden;
+}
+section .contentDisplay .contentHeader{
+    height: 60px;
+    background: slateblue;
+}
+
+section .contentDisplay .contentContainer{
+    height: 220px;
+    background: var(--black);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+section .contentContainer .contentItems{
+    width: 284px;
+    height: 100%;
+    background: yellow;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .contentItems .image{
+    height: 60%;
+    width: 80%;
+    background: violet;
+}
+
+section .contentItems .name{
+    height: 20%;
+    width: 100%;
+    background: springgreen;
+}
+
+section .contentItems .detail{
+    height: 20%;
+    width: 100%;
+    background: wheat;
+}
+/* End Content Display */
+
+/* End center  */
+
+/* Start right  */
+section .right{
+    width: 20%;
+}
+
+section .right .rightAdContainer{
+    position: fixed;
+    width: 200px;
+    height: 478px;
+    background: wheat;
+    right: 170px;
+    top: 13%;
+    border-radius: 15px;
+}
+
+/* End right  */
+
+
