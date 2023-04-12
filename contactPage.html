@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <a href="">
+        <a href="mainPage.html">
             <img src="Pictures/Logo.png" alt="Logo">
         </a>
         <div class="searchBarContainer">
@@ -62,6 +62,13 @@
             <ul>
                 
                 <li>
+                    <a href="contactPage.html">
+                        <i class="fa-solid fa-comment"></i>
+                        <br>
+                        <span>Contact Us</span>
+                    </a>
+                </li>
+                <li>
                     <a href="">
                         <i class="fa-solid fa-user"></i>
                         <br>
@@ -84,7 +91,60 @@
         </div>
     </header>
 
-
+    <section>
+        <div class="contentHeader">
+            <h1>Contact Us</h1>
+        </div>
+        <form method="post" action="">
+            <div class="formDetailHorizontal">
+                <label for="contactPurpose">Contact Purpose: </label>
+                <select name="contactPurpose" id="contactPurpose" required>
+                    <option value="null" hidden></option>
+                    <option value="I want to sell books">I want to sell books</option>
+                    <option value="I want to buy books">I want to buy books</option>
+                </select>
+            </div>
+            <div class="formDetail">
+                <label for="name" >Name</label>
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="formDetail">
+                <label for="email" >Email</label>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div class="formDetail">
+                <label for="phone" >Phone</label>
+                <input type="phone" id="phone" placeholder="Phone">
+            </div>
+            
+            <div class="formDetail">
+                <label for="message" >Message</label>
+                <textarea name="" id="message" placeholder="Enter your message here..."></textarea>
+            </div>
+            <div class="formDetailHorizontal">
+                <span>How would you like me to contact you?</span>
+                <div class="subDiv">
+                    <input type="checkbox" id="emailbox" >
+                    <label for="emailbox" >Email</label>
+                    <input type="checkbox" id="Phone" >
+                    <label for="Phone" >Phone</label>
+                </div>
+            </div>
+            <div class="formDetailHorizontal">
+                <span>Want to know more about our uppcoming event?</span>
+                <div class="subDiv">
+                    <input type="radio" id="yes" name="ask">
+                    <label for="yes" >Yes</label>
+                    <input type="radio" id="no" name="ask">
+                    <label for="no" >No</label>
+                </div>
+            </div>
+            <div class="formSubmit">
+                <input type="submit" value="Submit">
+                <input type="submit" value="Reset">
+            </div>
+        </form>
+    </section>
 
     <footer>
         <div class="subscriptionDiv">
