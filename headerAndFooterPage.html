@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swanglee Bookstore</title>
-    <link rel="stylesheet" href="contactPage.css">
+    <link rel="stylesheet" href="mainPage.css">
     <link rel="stylesheet" href="headerAndFooterStyle.css">
     <script src="https://kit.fontawesome.com/6f8d1d8e9d.js" crossorigin="anonymous"></script>
 </head>
@@ -53,13 +53,12 @@
             <div class="searchBar">
                 <input type="text" class="searchTerm" placeholder="What are you looking for?">
                 <button type="submit" class="searchButton">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                 </button>
             </div>
         </div>
         <nav>
             <ul>
-                
                 <li>
                     <a href="contactPage.html">
                         <i class="fa-solid fa-comment"></i>
@@ -90,60 +89,7 @@
         </div>
     </header>
 
-    <section>
-        <div class="contentHeader">
-            <h1>Contact Us</h1>
-        </div>
-        <form method="post" action="">
-            <div class="formDetailHorizontal">
-                <label for="contactPurpose">Contact Purpose: </label>
-                <select name="contactPurpose" id="contactPurpose" required>
-                    <option value="null" hidden></option>
-                    <option value="I want to sell books">I want to sell books</option>
-                    <option value="I want to buy books">I want to buy books</option>
-                </select>
-            </div>
-            <div class="formDetail">
-                <label for="name" >Name</label>
-                <input type="text" id="name" placeholder="Name">
-            </div>
-            <div class="formDetail">
-                <label for="email" >Email</label>
-                <input type="email" id="email" placeholder="Email">
-            </div>
-            <div class="formDetail">
-                <label for="phone" >Phone</label>
-                <input type="phone" id="phone" placeholder="Phone">
-            </div>
-            
-            <div class="formDetail">
-                <label for="message" >Message</label>
-                <textarea name="" id="message" placeholder="Enter your message here..."></textarea>
-            </div>
-            <div class="formDetailHorizontal">
-                <span>How would you like me to contact you?</span>
-                <div class="subDiv">
-                    <input type="checkbox" id="emailbox" >
-                    <label for="emailbox" >Email</label>
-                    <input type="checkbox" id="Phone" >
-                    <label for="Phone" >Phone</label>
-                </div>
-            </div>
-            <div class="formDetailHorizontal">
-                <span>Want to know more about our uppcoming event?</span>
-                <div class="subDiv">
-                    <input type="radio" id="yes" name="ask">
-                    <label for="yes" >Yes</label>
-                    <input type="radio" id="no" name="ask">
-                    <label for="no" >No</label>
-                </div>
-            </div>
-            <div class="formSubmit">
-                <input type="submit" value="Submit">
-                <input type="submit" value="Reset">
-            </div>
-        </form>
-    </section>
+
 
     <footer>
         <div class="subscriptionDiv">
@@ -156,7 +102,6 @@
             </form>
         </div>
         <div class="basicInformation">
-
             <div class="detail">
                 <img src="Pictures/Logo.png" alt="Company Logo">
                 <br>
@@ -172,7 +117,6 @@
                 <a href="">Transportation Method</a>
 
             </div>
-
             <div class="detail">
                 <h3>Account</h3>
                 <a href="">Sign up</a>

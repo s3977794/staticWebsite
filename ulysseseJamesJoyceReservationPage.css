@@ -1,0 +1,273 @@
+:root{
+    --black: #181818;
+    --white: #fff;
+    --gray: #efefef;
+    --lightgray:#d4d4d4;
+    --boxshadow: rgb(0,0,0,0.25);
+    --cart:#7d7d7d;
+    --sale:#cecece;
+    --price:#ff0000;
+}
+
+body:has(input[name = "changeTheme"]:checked){
+    --white: #181818; 
+    --black: #fff;
+    --gray:#383838;
+    --lightgray:#121212;
+    --boxshadow: rgb(255,255,255,0.25);
+    --cart: #c7c7c7;
+    --sale:#e3e3e3;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background: var(--gray);
+
+}
+section{
+    width: 60%;
+    margin: 10px auto;
+}
+section .timeline{
+    margin: 0;
+    padding-left: 10px;
+    color: var(--black);
+    background: var(--lightgray);
+}
+
+section .timeline a{
+    color: var(--black);
+}
+
+section .timeline a,p{
+    display: inline-block;
+}
+
+section .bookInformationContainer{
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--white);
+    border-radius: 10px;
+}
+
+section .bookInformationContainer .bookImageContainer{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+section .bookInformationContainer .mainImage{
+    width: 70%;
+    height: 100%;
+}
+
+section .bookInformationContainer .mainImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+section .bookInformationContainer .secondaryImage{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+
+section  .secondaryImage .image{
+    width: 100%;
+    height: 25%;
+    padding: 5px;
+    overflow: hidden;
+}
+
+section .secondaryImage .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+section  .secondaryImage .image:hover{
+    border: 1px solid blue;
+}
+section  .secondaryImage .image:hover img{
+    transform: scale(1.3);
+}
+
+section .bookInformationContainer .bookOrderContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+section .bookOrderContainer .orderTitle{
+    display: inline;
+    line-height: 30px;
+    color: var(--black);
+}
+
+section .bookOrderContainer .orderTitle h1{
+    margin: 0;
+    font-size: 30px;
+}
+section .bookOrderContainer .orderTitle h4{
+    margin: 0;
+    font-size: 18px;
+}
+
+section .bookOrderContainer .orderPrice{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section .orderPrice .mainPrice h1{
+    font-size: 35px;
+    color: var(--price);
+}
+
+section .orderPrice .secondaryPrice{
+    margin-left: 20px;
+}
+
+section .orderPrice .secondaryPrice h2{
+    text-decoration: line-through;
+    font-size: 20px;
+    color: var(--cart);
+}
+section .bookOrderContainer .cartQuantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: var(--black);
+}
+
+section .cartQuantity label{
+    font-size: 20px;
+    margin-right: 20px;
+    width: 20%;
+
+}
+
+
+section .cartQuantity .quantityPicker{
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 100px;
+    height: 32px;
+    overflow: hidden;
+}
+
+section .cartQuantity .quantityPicker i{
+    width: 34%;
+    text-align: center;
+
+}
+
+section .cartQuantity .quantityPicker input{
+    width: 32%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    pointer-events: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+section .bookOrderContainer .orderAddtoCart{
+    height: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+section .orderAddtoCart input{
+    border-radius: 10px;
+    height: 100%;
+    width: 200px;
+    font-size: 20px;
+    background: var(--price);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+}
+
+section .bookDetailContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    background: var(--white);
+    padding: 10px;
+    color: var(--black);
+}
+
+section .bookDetailContainer .detailInformation{
+    width: 100%;
+}
+
+section .bookDetailContainer .detailInformation h2{
+    font-size: 25px;
+}
+
+section .bookDetailContainer .detailInformation table{
+    text-align: left;
+    line-height: 30px;
+    font-size: 17px;
+}
+
+section .bookDetailContainer .detailInformation th{
+    padding-right: 50px;
+}
+
+section .bookDetailContainer .detailInformation p{
+    font-size: 17px;
+    text-indent: 25px;
+}
+
+section .bookDetailContainer .author{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+section .bookDetailContainer .authorImage{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+section .bookDetailContainer .authorImage img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+section .bookDetailContainer .authorDetail {
+    width: 80%;
+    padding: 10px;
+}
+section .bookDetailContainer .authorDetail h2{
+    margin: 0;
+}
+
+

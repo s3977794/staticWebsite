@@ -130,7 +130,22 @@ section form .formSubmit{
     justify-content: center;
     align-items: center;
     width: 100%;
+    
 }
+
+section form .formSubmit input{
+    margin: 5px;
+    background: var(--white);
+    cursor: pointer;
+    transition: 0s;
+    color: var(--black);
+}
+
+section form .formSubmit input:hover{
+    outline: 1px solid var(--black);
+    outline-offset: 2px;
+}
+
 @media (max-width: 960px){
     section form .formDetail label{
         visibility: visible;
@@ -138,6 +153,12 @@ section form .formSubmit{
     section form .formDetail{
         margin-bottom: 30px;
     }
+
+    section form .formDetail textarea::placeholder{
+        font-size: 12px;
+    }
+    
+
     section form .formDetailHorizontal:first-child{
         display: flex;
         flex-direction: column;
@@ -146,8 +167,9 @@ section form .formSubmit{
     }
     section form .formDetailHorizontal select{
         font-size: 12px;
+        margin-bottom: 30px;
     }
     section form .formDetailHorizontal select:focus{
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
 }

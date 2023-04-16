@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swanglee Bookstore</title>
-    <link rel="stylesheet" href="contactPage.css">
+    <link rel="stylesheet" href="ulysseseJamesJoyceReservationPage.css">
     <link rel="stylesheet" href="headerAndFooterStyle.css">
     <script src="https://kit.fontawesome.com/6f8d1d8e9d.js" crossorigin="anonymous"></script>
 </head>
@@ -53,13 +53,12 @@
             <div class="searchBar">
                 <input type="text" class="searchTerm" placeholder="What are you looking for?">
                 <button type="submit" class="searchButton">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                 </button>
             </div>
         </div>
         <nav>
             <ul>
-                
                 <li>
                     <a href="contactPage.html">
                         <i class="fa-solid fa-comment"></i>
@@ -91,59 +90,80 @@
     </header>
 
     <section>
-        <div class="contentHeader">
-            <h1>Contact Us</h1>
+        <div class="timeline">
+            <a href="index.html">Home</a> > <a href="fictionCategory.html">Fiction Books</a> <p>> Uslysses by James Joyce</p>
         </div>
-        <form method="post" action="">
-            <div class="formDetailHorizontal">
-                <label for="contactPurpose">Contact Purpose: </label>
-                <select name="contactPurpose" id="contactPurpose" required>
-                    <option value="null" hidden></option>
-                    <option value="I want to sell books">I want to sell books</option>
-                    <option value="I want to buy books">I want to buy books</option>
-                </select>
-            </div>
-            <div class="formDetail">
-                <label for="name" >Name</label>
-                <input type="text" id="name" placeholder="Name">
-            </div>
-            <div class="formDetail">
-                <label for="email" >Email</label>
-                <input type="email" id="email" placeholder="Email">
-            </div>
-            <div class="formDetail">
-                <label for="phone" >Phone</label>
-                <input type="phone" id="phone" placeholder="Phone">
-            </div>
-            
-            <div class="formDetail">
-                <label for="message" >Message</label>
-                <textarea name="" id="message" placeholder="Enter your message here..."></textarea>
-            </div>
-            <div class="formDetailHorizontal">
-                <span>How would you like me to contact you?</span>
-                <div class="subDiv">
-                    <input type="checkbox" id="emailbox" >
-                    <label for="emailbox" >Email</label>
-                    <input type="checkbox" id="Phone" >
-                    <label for="Phone" >Phone</label>
+        <div class="bookInformationContainer">
+            <div class="bookImageContainer">
+                <div class="mainImage">
+                    <img src="Pictures/UlyssesJamesJoyce.jpg" alt="">
+                </div>
+                <div class="secondaryImage">
+                    <div class="image"><img src="Pictures/UlysseJamesJoyceBack.jpg" alt=""></div>
+                    <div class="image"><img src="Pictures/UlysseJamesJoyceRealBook.jfif" alt=""></div>
                 </div>
             </div>
-            <div class="formDetailHorizontal">
-                <span>Want to know more about our uppcoming event?</span>
-                <div class="subDiv">
-                    <input type="radio" id="yes" name="ask">
-                    <label for="yes" >Yes</label>
-                    <input type="radio" id="no" name="ask">
-                    <label for="no" >No</label>
+            <div class="bookOrderContainer">
+                <div class="orderTitle"><h1>Ulysses </h1><h4>by James Joyce</h4></div>
+                <div class="orderPrice">
+                    <div class="mainPrice"><h1>190k</h1></div>
+                    <div class="secondaryPrice"><h2>250k</h2></div>
+                </div>
+                <div class="cartQuantity">
+                    <label for="Quantity">Quantity</label>
+                    <div class="quantityPicker">
+                        <i class="fa-solid fa-minus"></i>
+                        <input type="text" name="Quantity" id="Quantity" value = "1" min="1">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="orderAddtoCart">
+                    <input type="submit" value="Add to cart">
                 </div>
             </div>
-            <div class="formSubmit">
-                <input type="submit" value="Submit">
-                <input type="submit" value="Reset">
+        </div>
+        <div class="bookDetailContainer">
+                <div class="detailInformation">
+                    <h2>Product details</h2>
+                    <table>
+                        <tr>
+                            <th>Author</th>
+                            <td>James Joyce</td>
+                        </tr>
+                        <tr>
+                            <th>Publisher</th>
+                            <td>Simon & Brown (November 1, 2018)</td>
+                        </tr>
+                        <tr>
+                            <th>Language</th>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>2 pounds</td>
+                        </tr>
+                        <tr>
+                            <th>Dimensions</th>
+                            <td>6 x 1.31 x 9 inches</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <h2>Summary</h2>
+                    <p>The whole plot of Ulysses takes place on a single day (June 16, 1904) in and around Dublin. The novel's three central characters—Stephen Dedalus (the hero of Joyce's earlier Portrait of the Artist as a Young Man); Leopold Bloom, a Jewish advertising canvasser; and his wife, Molly—are meant to be modern counterparts of Telemachus, Ulysses (Odysseus), and Penelope, and the events of the novel loosely parallel Odysseus' journey home after the Trojan War.</p>
+                    <hr>
+                    <div class="author">
+                        <div class="authorImage"><img src="Pictures/UlyssesJames-Joyce.webp" alt=""></div>
+                        <div class="authorDetail">
+                            <h2>James Joyce</h2>
+                            <p>James Augustine Aloysius Joyce was an Irish author and poet who lived from 2 February 1882 to 13 January 1941. He was a member of the modernist avant-garde and is considered as one of the twentieth century's most influential and important authors.
+
+                                Joyce is best known for Ulysses (1922), a seminal work in which Homer's Odyssey scenes are replicated in a variety of different literary styles, probably most notably the stream-of-consciousness approach he employed. The short story collection Dubliners (1914), as well as the novels A Portrait of the Artist as a Young Man (1916) and Finnegans Wake (1939), are among well-known works by Joyce. His other works include three poetry collections, a play, sporadic journalism, and published correspondence.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </form>
     </section>
+
 
     <footer>
         <div class="subscriptionDiv">
@@ -156,7 +176,6 @@
             </form>
         </div>
         <div class="basicInformation">
-
             <div class="detail">
                 <img src="Pictures/Logo.png" alt="Company Logo">
                 <br>
@@ -172,7 +191,6 @@
                 <a href="">Transportation Method</a>
 
             </div>
-
             <div class="detail">
                 <h3>Account</h3>
                 <a href="">Sign up</a>
