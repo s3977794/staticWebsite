@@ -5,7 +5,7 @@
     --lightgray:#d4d4d4;
     --boxshadow: rgb(0,0,0,0.25);
     --cart:#7d7d7d;
-    --sale:#cecece;
+    --sale:#bcbcbc;
 }
 
 body:has(input[name = "changeTheme"]:checked){
@@ -80,7 +80,7 @@ section .newsContainer .mainNews{
     height: 70%;
     padding: 5px;
 }
-section .newsContainer .mainNews img{
+section .newsContainer .mainNews video{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -92,7 +92,6 @@ section .newsContainer .secondaryNews{
     height: 30%;
     display: flex;
     justify-content: space-between;
-    
 }
 
 section .secondaryNews .newsItem{
@@ -119,8 +118,8 @@ section .contentDisplay{
     margin-top: 20px;
     background: yellow;
     display: block;
-    overflow: hidden;
     min-height: 1px;
+    overflow: hidden;
 }
 
 section .itemHeader{
@@ -128,6 +127,8 @@ section .itemHeader{
     color: var(--black);
     background: var(--white);
     border-bottom: 1px solid var(--gray);
+    width: 100%;
+    position: relative;
 }
 
 section .itemHeader h1{
@@ -135,6 +136,22 @@ section .itemHeader h1{
     font-size: 25px;
     padding-left: 10px;
 }
+
+section .itemHeader i{
+    position: absolute;
+    right: 15px;
+    top: 40%;
+}
+section .itemHeader a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+section .itemHeader a:hover i{
+    transform: scale(1.1);
+    transform: translateX(5px)
+}
+
 
 section .itemsContainer {
     height: auto; 
@@ -278,8 +295,8 @@ section .right .rightAdContainer img{
 
 @media (max-width: 960px){
     section .itemsContainer .itemDetail{
-        width: 30%;
-        margin: 1.60%;
+        width: 44%;
+        margin: 3%;
     }
     section .left .leftAdContainer{
         display: none;

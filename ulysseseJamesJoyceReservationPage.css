@@ -7,16 +7,20 @@
     --cart:#7d7d7d;
     --sale:#cecece;
     --price:#ff0000;
+    --border: #18181892;
+
 }
 
 body:has(input[name = "changeTheme"]:checked){
     --white: #181818; 
     --black: #fff;
-    --gray:#383838;
+    --gray:#151212;
     --lightgray:#121212;
     --boxshadow: rgb(255,255,255,0.25);
     --cart: #c7c7c7;
     --sale:#e3e3e3;
+    --border: #ebeaea;
+
 }
 *{
     box-sizing: border-box;
@@ -164,7 +168,7 @@ section .cartQuantity label{
 
 
 section .cartQuantity .quantityPicker{
-    border: 1px solid var(--black);
+    border: 1px solid var(--border);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -177,18 +181,33 @@ section .cartQuantity .quantityPicker{
 
 section .cartQuantity .quantityPicker i{
     width: 34%;
-    text-align: center;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    cursor: pointer;
+    color: var(--border);
+}
+section .cartQuantity .quantityPicker i:first-child{
+    border-right: 1px solid var(--border);
+    
 }
 
-section .cartQuantity .quantityPicker input{
+section .cartQuantity .quantityPicker i:last-child{
+    border-left: 1px solid var(--border);
+}
+section .cartQuantity .quantityPicker span{
     width: 32%;
     height: 100%;
     border: none;
-    text-align: center;
     pointer-events: none;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section .bookOrderContainer .orderAddtoCart{
@@ -270,4 +289,15 @@ section .bookDetailContainer .authorDetail h2{
     margin: 0;
 }
 
+@media (max-width: 1500px){
+    section {
+        width: 60%;
+    }
+}
+
+@media (max-width: 960px){
+    section{
+        width: 100%;
+    }
+}
 

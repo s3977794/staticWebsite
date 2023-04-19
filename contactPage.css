@@ -145,6 +145,14 @@ section form .formSubmit input:hover{
     outline: 1px solid var(--black);
     outline-offset: 2px;
 }
+@media (max-width: 1500px){
+    section form .formDetailHorizontal select{
+        font-size: 15px;
+    }
+    section form .formDetailHorizontal select:focus{
+        margin-bottom: 50px;
+    }
+}
 
 @media (max-width: 960px){
     section form .formDetail label{

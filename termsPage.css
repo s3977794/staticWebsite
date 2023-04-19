@@ -1,0 +1,84 @@
+:root{
+    --black: #181818;
+    --white: #ffffff;
+    --gray: #efefef;
+    --lightgray:#d4d4d4;
+    --boxshadow: rgb(0,0,0,0.25);
+    --cart:#7d7d7d;
+    --sale:#bcbcbc;
+
+}
+body:has(input[name = "changeTheme"]:checked){
+    --white: #181818; 
+    --black: #fff;
+    --gray:#383838;
+    --boxshadow: rgb(255,255,255,0.25);
+    --lightgray:#121212;
+    --cart: #c7c7c7;
+    --sale:#e3e3e3;
+
+}
+
+body{
+    background: var(--gray);
+}
+section{
+    width: 60%;
+    margin: 10px auto;
+    background: var(--white);
+    color: var(--black);
+}
+
+section .timeline{
+    margin: 0;
+    padding-left: 10px;
+    background: var(--lightgray);
+    color: var(--black);
+}
+
+section .timeline a{
+    color: var(--black);
+}
+
+section .timeline a,p{
+    display: inline-block;
+}
+
+section .detailContainer {
+    width: 100%;
+}
+section .detailContainer .header{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase ;
+}
+
+section .detailContainer .information{
+    width: 100%;
+    padding: 10px;
+}
+
+section .detailContainer .information p{
+    margin: 0;
+    line-height: 30px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+section .detailContainer .information span{
+    font-weight: bold;
+}
+
+@media (max-width: 1500px){
+    section {
+        width: 60%;
+    }
+}
+
+@media (max-width: 960px){
+    section{
+        width: 100%;
+    }
+}
+

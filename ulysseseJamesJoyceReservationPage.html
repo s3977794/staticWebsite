@@ -8,18 +8,21 @@
     <title>Swanglee Bookstore</title>
     <link rel="stylesheet" href="ulysseseJamesJoyceReservationPage.css">
     <link rel="stylesheet" href="headerAndFooterStyle.css">
+    
     <script src="https://kit.fontawesome.com/6f8d1d8e9d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
+        <div class="logoHeader">
+            <a href="index.html">
             <img src="Pictures/Logo.png" alt="Logo">
-        </a>
+            </a>
+        </div>
         <div class="searchBarContainer">
-            <div class="dropDown">
-                <span><i class="fa-solid fa-list"></i></span>
-                <div class="dropDownContent">
+            <div class="dropDown" id="toggleBtn">
+                <span ><i class="fa-solid fa-bars"></i></span>
+                <div id="dropDownContent" class="dropDownContent">
                     <div class="dropDownContentDetail">
                         <div class="product">
                             <h3><a href="fictionCategory.html">Fiction</a> </h3>
@@ -35,8 +38,8 @@
                             <ul>
                                 <li><a href="nonFictionCategory.html#Biographies and Memoirs">Biographies and Memoirs</a> </li>
                                 <li><a href="nonFictionCategory.html#Self-help">Self-help</a> </li>
-                                <li><a href="nonFictionCategory.html#History">History</a></li>
-                                <li><a href="nonFictionCategory.html#Travel">More...</a> </li>
+                                
+                                <li><a href="nonFictionCategory.html#Travel">Travel</a> </li>
                             </ul>
                         </div>
                         <div class="product">
@@ -49,6 +52,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="searchBar">
                 <input type="text" class="searchTerm" placeholder="What are you looking for?">
@@ -66,28 +70,18 @@
                         <span>Contact Us</span>
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-user"></i>
-                        <br>
-                        <span>Profile</span>
-                    </a>
-                </li>
-
-                <li>
-                    <div class="switchDisplayMode">
-                        <label class="changeTheme" id="changeTheme">
-                            <input type="checkbox" name="changeTheme">
-                        </label>
-                        <p>Dark Mode</p>
-                    </div>
-                </li>
             </ul>
         </nav>
-        <div class="scrollToTopButton">
-            <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+        <div class="switchDisplayMode">
+            <label class="changeTheme" id="changeTheme">
+                <i id="light" class="fa-solid fa-sun"></i>
+                <input type="checkbox" name="changeTheme">
+                <i id="dark" class="fa-solid fa-moon"></i>
+            </label>
+            
         </div>
     </header>
+    <script src="mainPage.js"></script>
 
     <section>
         <div class="timeline">
@@ -112,10 +106,11 @@
                 <div class="cartQuantity">
                     <label for="Quantity">Quantity</label>
                     <div class="quantityPicker">
-                        <i class="fa-solid fa-minus"></i>
-                        <input type="text" name="Quantity" id="Quantity" value = "1" min="1">
-                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus" id="minus"></i>
+                        <span id="Quantity">1</span>
+                        <i class="fa-solid fa-plus" id="plus"></i>
                     </div>
+                    <script src="ulysseseJamesJoyceReservation.js"></script>
                 </div>
                 <div class="orderAddtoCart">
                     <input type="submit" value="Add to cart">
@@ -185,23 +180,17 @@
             <div class="detail">
 
                 <h3>About Us</h3>
-                <a href="">About Swanglee Bookstore</a>
-                <a href="">Swanglee Bookstore System</a>
-                <a href="">Sales Policy</a>
-                <a href="">Transportation Method</a>
+                <a href="AboutUsPage.html">About Swanglee Bookstore</a>
+                <a href="privacyPolicyPage.html">Privacy Policy</a>
+                <a href="termsPage.html">Terms</a>
 
             </div>
-            <div class="detail">
-                <h3>Account</h3>
-                <a href="">Sign up</a>
-                <a href="">Log in</a>
-                <a href="">Account Profile</a>
-                <a href="">Favorite Lists</a>
-            </div>
+
             <div class="detail">
                 <h3>Contact Us</h3>
                 <div class="contactUs">
                     <p>Hotline: 1900 8898</p>
+                    <br>
                     <p>swangleebookstore@rmit.edu.com</p>
                     <h2>
                         <a href=""><i class="fa-brands fa-facebook"></i></a>

@@ -13,13 +13,15 @@
 
 <body>
     <header>
-        <a href="index.html">
+        <div class="logoHeader">
+            <a href="index.html">
             <img src="Pictures/Logo.png" alt="Logo">
-        </a>
+            </a>
+        </div>
         <div class="searchBarContainer">
-            <div class="dropDown">
-                <span><i class="fa-solid fa-list"></i></span>
-                <div class="dropDownContent">
+            <div class="dropDown" id="toggleBtn">
+                <span ><i class="fa-solid fa-bars"></i></span>
+                <div id="dropDownContent" class="dropDownContent">
                     <div class="dropDownContentDetail">
                         <div class="product">
                             <h3><a href="fictionCategory.html">Fiction</a> </h3>
@@ -35,8 +37,8 @@
                             <ul>
                                 <li><a href="nonFictionCategory.html#Biographies and Memoirs">Biographies and Memoirs</a> </li>
                                 <li><a href="nonFictionCategory.html#Self-help">Self-help</a> </li>
-                                <li><a href="nonFictionCategory.html#History">History</a></li>
-                                <li><a href="nonFictionCategory.html#Travel">More...</a> </li>
+                                
+                                <li><a href="nonFictionCategory.html#Travel">Travel</a> </li>
                             </ul>
                         </div>
                         <div class="product">
@@ -49,6 +51,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="searchBar">
                 <input type="text" class="searchTerm" placeholder="What are you looking for?">
@@ -66,29 +69,20 @@
                         <span>Contact Us</span>
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-user"></i>
-                        <br>
-                        <span>Profile</span>
-                    </a>
-                </li>
-
-                <li>
-                    <div class="switchDisplayMode">
-                        <label class="changeTheme" id="changeTheme">
-                            <input type="checkbox" name="changeTheme">
-                        </label>
-                        <p>Dark Mode</p>
-                    </div>
-                </li>
             </ul>
         </nav>
-        <div class="scrollToTopButton">
-            <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+        <div class="switchDisplayMode">
+            <label class="changeTheme" id="changeTheme">
+                <input type="checkbox" name="changeTheme">
+                <i id="dark" class="fa-solid fa-moon"></i>
+            </label>
+            
         </div>
     </header>
-
+    <script src="mainPage.js"></script>
+    <div class="scrollToTopButton">
+            <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
     <section>
         <div class="left">
             <div class="leftAdContainer">
@@ -101,9 +95,9 @@
             <div class="divNews">
                 <div class="newsContainer">
                     <div class="mainNews">
-                        <a href="">
-                            <img src="Pictures/TheSixthExtinctionAnUnnaturalHistory.jpg" alt="">
-                        </a>
+                        
+                        <video muted autoplay loop src="Videos/IntroToSwangleeBoostore.mp4"></video>
+                        
                     </div>
                     <div class="secondaryNews">
                         <div class="newsItem">
@@ -131,10 +125,11 @@
             </div>
             <div class="itemHeader">
                 <h1>Fiction</h1>
+                <a href="fictionCategory.html"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="itemsContainer">
                 <div class="itemDetail">
-                    <a href="">
+                    <a href="ulysseseJamesJoyceReservationPage.html">
                         <div class="imageContainer">
                             <img src="Pictures/UlyssesJamesJoyce.jpg" alt="">
                         </div>
@@ -143,10 +138,10 @@
                                 <p>Ulysses -  James Joyce</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>190k</h3>
+                                <h3>190.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -164,10 +159,10 @@
                                 <p>War and Peace -  Leo Tolstoy </p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>450.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -185,10 +180,10 @@
                                 <p>Anna Karenina -  Leo Tolstoy</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>550.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -206,10 +201,10 @@
                                 <p>Madame Bovary: Provincial Manners (Oxford World's Classics) -  Gustave Flaubert, Malcolm Bowie,  Mark Overstall</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>190k</h3>
+                                <h3>190.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -227,10 +222,10 @@
                                 <p>The Old Man and The Sea, Book Cover May Vary -  Ernest Hemingway</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>90.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -241,6 +236,7 @@
             </div>
             <div class="itemHeader">
                 <h1>Non-Fiction</h1>
+                <a href="nonFictionCategory.html"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="itemsContainer">
                 <div class="itemDetail">
@@ -253,10 +249,10 @@
                                 <p>Between the World and Me - Ta-Nehisi Coates</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -274,10 +270,10 @@
                                 <p>The Emperor of All Maladies: A Biography of Cancer -  Siddhartha Mukherjee</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -295,10 +291,10 @@
                                 <p>The Sixth Extinction: An Unnatural History -  Elizabeth Kolbert</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -316,10 +312,10 @@
                                 <p>How to Survive a Plague: The Inside Story of How Citizens and Science Tamed AIDS -  David France</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -330,6 +326,8 @@
             </div>
             <div class="itemHeader">
                 <h1>Stationary</h1>
+                <a href="stationayCategory.html"><i class="fa-solid fa-arrow-right"></i></a>
+
             </div>
             <div class="itemsContainer">
                 <div class="itemDetail">
@@ -342,10 +340,10 @@
                                 <p>Eraseable pen - Black </p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -363,10 +361,10 @@
                                 <p>Eraseable pen - White/Blue </p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -384,10 +382,10 @@
                                 <p>Fountain pen - Yellow/White</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -405,10 +403,10 @@
                                 <p>Set of 5 pens - Blue</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -426,10 +424,10 @@
                                 <p>Set of 5 pens - Black</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -447,10 +445,10 @@
                                 <p>Gel pen - Lightblue</p>
                             </div>
                             <div class="informationDetail">
-                                <h3>290k</h3>
+                                <h3>290.000 đ</h3>
                                 <div class="detailAddition">
                                     <div class="salePrice">
-                                        <h4>250k</h4>
+                                        <h4>250.000 đ</h4>
                                     </div>
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>
                                 </div>
@@ -488,18 +486,10 @@
             <div class="detail">
 
                 <h3>About Us</h3>
-                <a href="">About Swanglee Bookstore</a>
-                <a href="">Swanglee Bookstore System</a>
-                <a href="">Sales Policy</a>
-                <a href="">Transportation Method</a>
+                <a href="AboutUsPage.html">About Swanglee Bookstore</a>
+                <a href="privacyPolicyPage.html">Privacy Policy</a>
+                <a href="termsPage.html">Terms</a>
 
-            </div>
-            <div class="detail">
-                <h3>Account</h3>
-                <a href="">Sign up</a>
-                <a href="">Log in</a>
-                <a href="">Account Profile</a>
-                <a href="">Favorite Lists</a>
             </div>
             <div class="detail">
                 <h3>Contact Us</h3>
