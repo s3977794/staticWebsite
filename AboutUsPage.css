@@ -1,3 +1,18 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Le Dang Quang
+ID: s3977794
+Acknowledgement: 
+icon:https://fontawesome.com/
+books:
+https://markmanson.net/best-books/fiction#:~:text=The%2047%20Best%20Fiction%20Books%20of%20All%20Time,to%20Napoleon%20himself.%20The%20modern%20epic.%20More%20items
+https://reedsy.com/discovery/blog/best-nonfiction-books
+https://www.goodhousekeeping.com/life/entertainment/g26143680/best-romance-novels/
+https://www.ereads.com/best-science-fiction-books/#:~:text=Best%20Science%20Fiction%20Books%201%20Dune%20by%20Frank,Sheep%3F%20by%20Philip%20K.%20Dick%20...%20More%20items
+stationary:https://www.fahasa.com/ */
+
 :root{
     --black: #181818;
     --white: #ffffff;
@@ -49,14 +64,15 @@ section .websiteLogoContainer {
 
 
 section .websiteLogo{
+    width: 100%;
     height: 100%;
-    background-image: url("Pictures/Logoresize.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
 }
+section .websiteLogo img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
 
 section .detailContainer {
     width: 100%;
@@ -95,6 +111,10 @@ section .detailContainer .information p{
     section{
         width: 100%;
     }
+    section .websiteLogo img{
+        object-fit: contain;
+    }
+
 }
 
 
