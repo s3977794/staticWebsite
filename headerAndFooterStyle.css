@@ -18,6 +18,7 @@ html{
 *{
     transition: 0.3s;
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body{
     margin: 0;
@@ -41,7 +42,6 @@ header{
 header .logoHeader{
     height: 75px;
     width: 176px;
-    background: yellowgreen;
     margin-left: -200px;
 }
 header .logoHeader a{
@@ -81,7 +81,7 @@ header .dropDown{
     position: relative;
     width: 30px;
     display: block;
-    padding: 30px;
+    padding: 35px;
     margin: 10px 10px 5px 0;
 }
 

@@ -162,7 +162,7 @@ section .bookOrderContainer .cartQuantity{
 section .cartQuantity label{
     font-size: 20px;
     margin-right: 20px;
-    width: 20%;
+    width: 100px;
 
 }
 
@@ -201,7 +201,7 @@ section .cartQuantity .quantityPicker span{
     height: 100%;
     border: none;
     pointer-events: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: var(--black);
     background: var(--white);
@@ -283,7 +283,7 @@ section .bookDetailContainer .authorImage img{
 }
 section .bookDetailContainer .authorDetail {
     width: 80%;
-    padding: 10px;
+    padding: 20px;
 }
 section .bookDetailContainer .authorDetail h2{
     margin: 0;
@@ -299,5 +299,16 @@ section .bookDetailContainer .authorDetail h2{
     section{
         width: 100%;
     }
-}
+    section .bookInformationContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section .bookInformationContainer .bookImageContainer{
+        width: 100%;
+    }
+    section .bookInformationContainer .bookOrderContainer{
+        width: 100%;
+    }
 
+}
