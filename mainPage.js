@@ -51,3 +51,10 @@ function Added() {
 function noty() {
     alert("Our customer care will contact you later. Thank you!");
 }
+
+const resetBtn = document.getElementById('resetBtn');
+const inputs = document.querySelectorAll('input');
+
+resetBtn.addEventListener('click', () => {
+    inputs.forEach(input => input.value = '');
+})
