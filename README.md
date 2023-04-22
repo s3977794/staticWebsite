@@ -1,1 +1,1 @@
-https://github.com/s3977794/staticWebsite
+https://s3977794.github.io/staticWebsite/
