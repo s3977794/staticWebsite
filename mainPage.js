@@ -52,6 +52,8 @@ function pluralWord(number){
 
 function Added() {
     alert("You have added " + number + " " + pluralWord(number) + " to cart!" );
+    number = 1;
+    quantity.innerText = number;
 }
 
 function noty() {
