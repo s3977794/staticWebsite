@@ -43,9 +43,15 @@ minus.addEventListener("click", () => {
     console.log(number);
 });
 
+function pluralWord(number){
+    if (number > 1){
+        return 'items';
+    }
+    return 'item';
+}
 
 function Added() {
-    alert("Your item has been added to cart!");
+    alert("You have added " + number + " " + pluralWord(number) + " to cart!" );
 }
 
 function noty() {
