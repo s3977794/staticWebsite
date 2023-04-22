@@ -22,7 +22,7 @@ toggleBtn.addEventListener('click', () => {
     else{
         dropDownContent.style.display = 'none';
     }
-})
+});
 
 const minus = document.getElementById("minus");
 const plus = document.getElementById("plus");
@@ -40,8 +40,8 @@ minus.addEventListener("click", () => {
         number--;
         quantity.innerText = number;
     }
-    console.log(number)
-})
+    console.log(number);
+});
 
 
 function Added() {
